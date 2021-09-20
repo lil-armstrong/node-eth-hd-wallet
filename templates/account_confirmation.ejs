@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account confirmation</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <header class="heroHeader">
+          <div>
+            <span
+              style="
+                background: #0b5cbe;
+                border-radius: 50px;
+                height: 40px;
+                width: 40px;
+                margin: auto;
+                border: 2px solid #fff;
+              "
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAY0lEQVQ4je3SWw2AMAyF4UlACpImCQk4ACdIQcLP0xLC2iVrzyPnufnSWymCADtwAYsKazmVGED9MREGbMCqwlrh7aFTY36KOzS0Mw9NHcBAj/Q1jY7i2ACNYwaax17o8C+9PK8tXWMmWPR7AAAAAElFTkSuQmCC"
+                alt="check"
+              />
+            </span>
+          </div>
+          <h2>Account confirmation</h2>
+        </header>
+      </div>
+      <p>Hi, <%= recipientEmail %></p>
+      <p>Thank you for signing up with <%= companyName %></p>
+      <p>
+        please verify your email address by clicking on the confirmation link
+        below.
+      </p>
+      <a href="<%= confirmationLink %>">
+        <button type="button">Confirm account</button>
+      </a>
+      <p><a href="<%= confirmationLink %>">Confim account</a></p>
+      <p>
+        *** If for any reason the above link is not clickable, please copy the
+        link and paste it in your choice of browser. Best regards,
+      </p>
+      <br />
+      <p>- Team <%= companyName %></p>
+    </div>
+  </body>
+</html>
